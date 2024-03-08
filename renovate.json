@@ -15,7 +15,7 @@
       "depNameTemplate": "xlxs",
       "datasourceTemplate": "custom.xlsx"
     }
-  ]
+  ],
   "customDatasources": {
     "xlsx": {
       "defaultRegistryUrlTemplate": "https://cdn.sheetjs.com/",
