@@ -15,5 +15,8 @@
           "matchDatasources": ["cdnurl"],
           "registryUrls":["https://cdn.sheetjs.com"]
       }
-  ]
+  ],
+  "cdnurl": {
+    "fileMatch": ["https://cdn.sheetjs.com"]
+  }
 }
