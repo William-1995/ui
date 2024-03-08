@@ -19,8 +19,11 @@
     "npm": {
         "fileMatch": ["package.json"],
         "enabled": true
-    }, 
-    {
+    },
+    "cdnurl": {
+    "fileMatch": ["a.html"],
+    "enabled": true
+  },
   "customManagers": [
     {
       "customType": "regex",
