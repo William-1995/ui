@@ -23,7 +23,7 @@
       "fileMatch": ["^package.json$"],
       "matchStringsStrategy": "combination",
       "matchStrings": [
-        "\"xlsx\":\\s*\"(?<currentValue>.*)\"\\s*//"
+        "\"xlsx\": 0.18.5"
       ],
       "datasourceTemplate": "custom.xlsx",
       "depNameTemplate": "https://cdn.sheetjs.com/"
@@ -38,7 +38,7 @@
   "packageRules": [
     {
       "matchDatasources": ["custom.xlsx"],
-      "extractVersion": "xlsx-0.20.1/xlsx-0.20.1.tgz$"
+      "extractVersion": "xlsx-0.20.1/xlsx-0.20.1.tgz"
     }
   ]
 }
