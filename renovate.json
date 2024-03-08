@@ -30,5 +30,8 @@
       "matchDatasources": ["custom.curl"],
       "extractVersion": "/curl-(?<version>.+)\\.tar\\.gz$"
     }
-  ]
+  ],
+  "html": {
+    "enable": true
+  }
 }
