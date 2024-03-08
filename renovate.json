@@ -19,7 +19,6 @@
  "cdnurl": {
     "fileMatch": ["package.json"],
     "enabled": true,
-    "depName": "xlsx",
     "currentValue":"0.20.1",
     "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
   }
