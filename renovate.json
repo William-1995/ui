@@ -20,7 +20,7 @@
   "matchSourceUrlPrefixes": [
     "https://git.sheetjs.com/SheetJS/sheetjs/"
   ]
-}
+},
   "customManagers": [
     {
       "customType": "regex",
