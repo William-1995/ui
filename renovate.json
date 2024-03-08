@@ -22,7 +22,7 @@
             "^.*a.txt$"
         ],
         "matchStrings": [
-          "renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?( packageName=(?<packageName>.*?))?( registryUrl=(?<registryUrl>.*?))?( extractVersion=(?<extractVersion>.*?))?\\s(ENV .*?_VERSION=|\\s*?default\\s*?=\\s*?\")(?<currentValue>.*?)\"?\\s"
+          "renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?( packageName=(?<packageName>.*?))?( registryUrl=(?<registryUrl>.*?))?( extractVersion=(?<extractVersion>.*?))?\\s(0.20.1)(?<currentValue>.*?)\"?\\s"
         ]
     }
   ]
