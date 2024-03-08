@@ -16,9 +16,6 @@
           "registryUrls":["https://cdn.sheetjs.com"]
       }
   ],
-  "cdnurl": {
-    "fileMatch": ["https://cdn.sheetjs.com"]
-  },
   "regexManagers": [
     {
         "fileMatch": [
@@ -26,6 +23,5 @@
         ],
         "matchStrings": [
           "renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?( packageName=(?<packageName>.*?))?( registryUrl=(?<registryUrl>.*?))?( extractVersion=(?<extractVersion>.*?))?\\s(ENV .*?_VERSION=|\\s*?default\\s*?=\\s*?\")(?<currentValue>.*?)\"?\\s"
-        ]
     }
 }
