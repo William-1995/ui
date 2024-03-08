@@ -28,7 +28,7 @@
         "\"xlsx\":\\s*\"(?<currentValue>.*)\"\\s*//"
       ],
       "depNameTemplate": "https://cdn.sheetjs.com/xlsx-0.20.1/xlsx-0.20.1.tgz",
-      "autoReplaceStringTemplate": "\"xlsx\" : {{{depName}}}",
+      "autoReplaceStringTemplate": " \"xlsx\" : \"https://cdn.sheetjs.com/xlsx-0.20.1/xlsx-0.20.1.tgz\"",
       "datasourceTemplate": "npm"
     }
   ]
