@@ -21,13 +21,8 @@
         "enabled": true
     }, 
     "cdnurl": {
-        "fileMatch": ["\\.html?$"],
+        "fileMatch": ["a.html"],
         "enabled": true
-    },
-   "customDatasources": {
-    "xlsx": {
-      "defaultRegistryUrlTemplate": "https://cdn.sheetjs.com/xlsx-0.20.1/xlsx-0.20.1.tgz"
     }
-  }
 }
 
