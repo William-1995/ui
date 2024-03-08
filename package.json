@@ -21,7 +21,7 @@
         "@angular/cdk": "17.2.2",
         "@angular/common": "~17.2.0",
         "@angular/compiler": "~17.2.0",
-        "@angular/core": "~13.4.0",
+        "@angular/core": "~17.2.0",
         "@angular/forms": "~13.4.0",
         "@angular/platform-browser": "~13.4.0",
         "@angular/router": "~17.2.0",
