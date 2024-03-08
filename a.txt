@@ -1,1 +1,2 @@
 # renovate: datasource=cd depName=xlsx registryUrl=https://cdn.sheetjs.com
+ENV TERRAFORM_VERSION=0.20.1
