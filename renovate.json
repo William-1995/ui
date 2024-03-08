@@ -6,7 +6,8 @@
     ],
   "packageRules": [
      {
-        "matchDatasources": ["npm", "custom.xlsx"],
+        "matchDatasources": ["deno"],
+        "matchPackageNames": ["xlsx"],
         "minimumReleaseAge": "2 days"
      }
   ],
