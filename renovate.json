@@ -1,28 +1,28 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "baseBranches": [
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "baseBranches": [
       "main"
     ],
-    "extends": [
+  "extends": [
     "config:recommended"
   ],
   "packageRules": [
-    {
+   {
       "matchDatasources": ["npm"],
       "minimumReleaseAge": "2 days"
-    },
-      {
+   },
+   {
           "matchDatasources": ["cdnurl"],
           "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
-      }
-  ],
-"npm": {
-    "fileMatch": ["package.json"],
-    "enabled": true
-}, 
-"cdnurl": {
-    "fileMatch": ["package.json"],
-    "enabled": true
-  }
+    }
+   ],
+    "npm": {
+        "fileMatch": ["package.json"],
+        "enabled": true
+    }, 
+    "cdnurl": {
+        "fileMatch": ["package.json"],
+        "enabled": true
+    }
 }
 
