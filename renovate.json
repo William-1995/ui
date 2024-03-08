@@ -11,7 +11,7 @@
      }
   ],
   "cdnurl": {
-    "fileMatch": ["\\.html?$"]
+    "fileMatch": ["package.json$"]
   },
 "regexManagers": [
     {
