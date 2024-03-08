@@ -4,24 +4,18 @@
     "baseBranches": [
       "main"
     ],
-  "packageRules": [
-     {
-        "minimumReleaseAge": "2 days"
-     }
-  ],
-"regexManagers": [
+  "cdnurl": {
+    "fileMatch": ["package.json$"]
+  },
+  "customManagers":[
     {
       "customType": "regex",
-      "fileMatch": ["^package.json$"],
-      "matchStringsStrategy": "combination",
-      "matchStrings": [
-        "\"xlsx\": 0.18.5"
-      ],
-      "datasourceTemplate": "custom.xlsx",
-      "depNameTemplate": "https://cdn.sheetjs.com/",
-      "currentValueTemplate": "0.18.5"
+      "fileMatch": ["package.json"],
+      "matchStrings": ["\"xlsx\": 0.18.5"],
+      "depNameTemplate": "xlxs",
+      "datasourceTemplate": "custom.xlsx"
     }
-  ],
+  ]
   "customDatasources": {
     "xlsx": {
       "defaultRegistryUrlTemplate": "https://cdn.sheetjs.com/",
@@ -31,7 +25,8 @@
   "packageRules": [
     {
       "matchDatasources": ["custom.xlsx"],
-      "extractVersion": "xlsx-0.20.0/xlsx-0.20.0.tgz"
+      "extractVersion": "xlsx-0.20.1/xlsx-0.20.1.tgz",
+      "matchCurrentValue": "!/^0\\./"
     }
   ]
 }
