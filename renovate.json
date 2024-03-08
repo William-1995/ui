@@ -20,9 +20,15 @@
         "fileMatch": ["package.json"],
         "enabled": true
     },
-    "html": {
-    "fileMatch": ["a.html"],
-    "enabled": true
-  }
+    {
+    "fileMatch": [
+      "\\.html?$"
+      ],
+      "versioning": "semver",
+      "digest": {
+        "enabled": false
+      },
+      "pinDigests": false
+    }
 }
 
