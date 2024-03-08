@@ -1,0 +1,35 @@
+{
+    "name": "test-ui",
+    "version": "4.0.0",
+    "config": {
+        "proxy_environment": "local",
+        "config_environment": "local",
+        "params": ""
+    },
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "start:proxy@linux": "ng serve --proxy-config ./local-test/proxy.$npm_package_config_proxy_environment.conf.js --configuration=$npm_package_config_config_environment --poll 100",
+        "start:proxy@windows": "ng serve --proxy-config ./local-test/proxy.%npm_package_config_proxy_environment%.conf.js --configuration=%npm_package_config_config_environment% --poll 100",
+        "build": "ng build --configuration=$npm_package_config_config_environment $npm_package_config_params",
+    },
+    "dependencies": {
+        "xlsx": "0.17.4",
+        "@angular-architects/module-federation": "14.0.0",
+        "@angular-architects/module-federation-tools": "14.0.0",
+        "@angular/animations": "^13.3.11",
+        "@angular/cdk": "13.3.9",
+        "@angular/common": "~13.3.11",
+        "@angular/compiler": "~13.3.11",
+        "@angular/core": "~13.3.11",
+        "@angular/forms": "~13.3.11",
+        "@angular/platform-browser": "~13.3.11",
+        "@angular/platform-browser-dynamic": "~13.3.11",
+        "@angular/router": "~13.3.11",
+    },
+    "devDependencies": {
+        
+    },
+    "resolutions": {
+    }
+}
