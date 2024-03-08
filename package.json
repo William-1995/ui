@@ -11,7 +11,7 @@
         "start": "ng serve",
         "start:proxy@linux": "ng serve --proxy-config ./local-test/proxy.$npm_package_config_proxy_environment.conf.js --configuration=$npm_package_config_config_environment --poll 100",
         "start:proxy@windows": "ng serve --proxy-config ./local-test/proxy.%npm_package_config_proxy_environment%.conf.js --configuration=%npm_package_config_config_environment% --poll 100",
-        "build": "ng build --configuration=$npm_package_config_config_environment $npm_package_config_params",
+        "build": "ng build --configuration=$npm_package_config_config_environment $npm_package_config_params"
     },
     "dependencies": {
         "xlsx": "0.17.4",
@@ -25,6 +25,6 @@
         "@angular/forms": "~13.3.11",
         "@angular/platform-browser": "~13.3.11",
         "@angular/platform-browser-dynamic": "~13.3.11",
-        "@angular/router": "~13.3.11",
+        "@angular/router": "~13.3.11"
     }
 }
