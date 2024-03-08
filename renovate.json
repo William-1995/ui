@@ -9,15 +9,15 @@
   "packageRules": [
     {
       "matchDatasources": ["npm"],
-      "minimumReleaseAge": "2 days"
+      "minimumReleaseAge": "2 days",
+         "matchSourceUrlPrefixes": [
+      "https://git.sheetjs.com/SheetJS/sheetjs/"
+    ]
     },
       {
           "matchDatasources": ["cdnurl"],
           "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
-      },
-    "matchSourceUrlPrefixes": [
-      "https://git.sheetjs.com/SheetJS/sheetjs/"
-    ]
+      }
   ]
 }
 
