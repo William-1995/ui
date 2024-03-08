@@ -7,8 +7,7 @@
       "fileMatch": ["^package.json$"],
       "matchStringsStrategy": "combination",
       "matchStrings": [
-        "\"extension\":\"(?<depName>.*)\"",
-        "\"version\":\"(?<currentValue>.*)\""
+        "\"xlsx\":\\s*\"(?<currentValue>.*)\"\\s*//"
       ],
       "datasourceTemplate": "custom.xlsx"
     }
