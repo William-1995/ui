@@ -12,8 +12,11 @@
       "minimumReleaseAge": "2 days"
     },
       {
-          "matchDatasources": ["cd"],
+          "matchDatasources": ["cdnurl"],
           "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
       }
-  ]
+  ],
+    "cdnurl":[
+         "fileMatch": ["\\.html?$"]
+    ]
 }
