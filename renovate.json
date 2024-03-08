@@ -27,7 +27,7 @@
       ],
       "datasourceTemplate": "custom.xlsx",
       "depNameTemplate": "https://cdn.sheetjs.com/",
-      "currentValueTemplate": "0.18.5"
+      "matchCurrentValue": "!/^0\\./"
     }
   ],
   "customDatasources": {
