@@ -12,8 +12,8 @@
       "minimumReleaseAge": "2 days"
     },
       {
-          "matchDatasources": ["cdnurl"],
-          "registryUrls":["https://cdn.sheetjs.com"]
+          "matchDatasources": ["npm"],
+          "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
       }
   ],
   "regexManagers": [
