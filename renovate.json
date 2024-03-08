@@ -16,7 +16,7 @@
           "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
       }
   ],
-    "cdnurl":[
+    "cdnurl":{
         "fileMatch": ["package.json"]
-    ]
+    }
 }
