@@ -10,7 +10,7 @@
   "npm": {
     "fileMatch": ["package.json"],
     "enabled": true
-  },
+  }
  "customDatasources": {
     "nginx": {
       "defaultRegistryUrlTemplate": "https://nginx.org/download",
@@ -30,8 +30,5 @@
       "matchDatasources": ["custom.curl"],
       "extractVersion": "/curl-(?<version>.+)\\.tar\\.gz$"
     }
-  ],
-  "html": {
-    "enable": true
-  }
+  ]
 }
