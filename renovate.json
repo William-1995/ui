@@ -1,4 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "dependencyDashboard": true
+  "dependencyDashboard": true,
+    "baseBranches": [
+      "main"
+    ],
+  "extends": [
+    "config:recommended"
+  ],
+  "packageRules": [
+   {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "2 days"
+   }
 }
