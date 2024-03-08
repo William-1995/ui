@@ -16,6 +16,11 @@
           "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
       }
   ],
+    {
+  "matchSourceUrlPrefixes": [
+    "https://git.sheetjs.com/SheetJS/sheetjs/"
+  ]
+}
   "customManagers": [
     {
       "customType": "regex",
@@ -23,7 +28,7 @@
         "a.txt"
       ],
       "matchStrings": [
-        "renovate:( datasource=(?<datasource>[a-z-.]+?))? depName=(?<depName>[^\\s]+?)(?: packageName=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-->\\s+<.+\\.version>(?<currentValue>.+)<\\/.+\\.version>"
+       "renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?( packageName=(?<packageName>.*?))?( registryUrl=(?<registryUrl>.*?))?( extractVersion=(?<extractVersion>.*?))?\s(ENV .*?_VERSION=|\s*?default\s*?=\s*?")(?<currentValue>.*?)"?\s"
       ]
     }
   ]
