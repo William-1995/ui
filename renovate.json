@@ -22,7 +22,7 @@
   "packageRules": [
     {
       "matchDatasources": ["custom.xlsx"],
-      "extractVersion": "xlsx-0.20.1/xlsx-0.20.1.tgz"
+      "extractVersion": "^xlsx-(?<version>.+)/xlsx-(?<version>.+).tgz$"
     }
   ]
 }
