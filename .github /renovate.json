@@ -3,11 +3,10 @@
     "baseBranches": [
       "master"
     ],
-    "repositoryCache":false,
   "packageRules": [
       {
       "matchDatasources": ["npm"],
-      "minimumReleaseAge": "3 days"
+      "minimumReleaseAge": "2 days"
     }
   ],
     "cd": {
