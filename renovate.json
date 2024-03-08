@@ -16,10 +16,17 @@
           "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
       }
   ],
- "cdnurl": {
-    "fileMatch": ["package.json"],
-    "enabled": true,
-    "deps": [],
-    "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
-  }
+{
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "a.txt"
+      ],
+      "matchStrings": [
+        "<!--\\s?renovate:( datasource=(?<datasource>[a-z-.]+?))? depName=(?<depName>[^\\s]+?)(?: packageName=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+-->\\s+<.+\\.version>(?<currentValue>.+)<\\/.+\\.version>"
+      ],
+    }
+  ]
+}
 }
