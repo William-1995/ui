@@ -20,11 +20,17 @@
         "fileMatch": ["package.json"],
         "enabled": true
     },
-    "cdnurl": {
-      "fileMatch": [
-          "\\.html?$"
-      ]
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["package.json$"],
+      "matchStrings": [
+        "\"xlsx\":\\s*\"(?<currentValue>.*)\"\\s*//"
+      ],
+      "depNameTemplate": "https://cdn.sheetjs.com/xlsx-0.20.1/xlsx-0.20.1.tgz",
+      "datasourceTemplate": "npm"
     }
-    
+  ]
 }
+
 
