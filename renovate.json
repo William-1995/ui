@@ -6,14 +6,9 @@
     ],
   "packageRules": [
      {
-        "matchDatasources": ["deno"],
-        "matchPackageNames": ["xlsx"],
         "minimumReleaseAge": "2 days"
      }
   ],
-  "bun": {
-     "fileMatch": ["package.json$"]
-  },
 "regexManagers": [
     {
       "customType": "regex",
