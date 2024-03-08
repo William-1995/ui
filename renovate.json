@@ -1,6 +1,19 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "baseBranches": [
+      "main"
+    ],
+    "extends": [
     "config:recommended"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "2 days"
+    },
+      {
+          "matchDatasources": ["cdnurl"],
+          "registryUrls":["https://cdn.sheetjs.com"]
+      }
   ]
 }
