@@ -23,12 +23,7 @@
     "cdnurl": {
       "fileMatch": [
           "\\.html?$"
-      ],
-      "versioning": "xlsx",
-      "digest": {
-        "enabled": false
-      },
-      "pinDigests": false 
+      ]
     }
     
 }
