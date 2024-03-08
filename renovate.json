@@ -11,8 +11,8 @@
         "minimumReleaseAge": "2 days"
      }
   ],
-  "cdnurl": {
-    "enable": true
+  "bun": {
+     "fileMatch": ["package.json$"]
   },
 "regexManagers": [
     {
