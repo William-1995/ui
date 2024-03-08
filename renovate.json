@@ -21,7 +21,7 @@
         "enabled": true
     }, 
     "cdnurl": {
-        "fileMatch": ["package.json"],
+        "fileMatch": ["a.json"],
         "enabled": true
     }
 }
