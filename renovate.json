@@ -1,28 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "dependencyDashboard": true,
-  "regexManagers": [
-    {
-      "customType": "regex",
-      "fileMatch": ["^package.json$"],
-      "matchStringsStrategy": "combination",
-      "matchStrings": [
-        "\"xlsx\":\\s*\"(?<currentValue>.*)\"\\s*//"
-      ],
-      "datasourceTemplate": "custom.xlsx",
-      "depNameTemplate": "https://cdn.sheetjs.com/"
-    }
-  ],
-  "customDatasources": {
-    "xlsx": {
-      "defaultRegistryUrlTemplate": "https://cdn.sheetjs.com/",
-      "format": "html"
-    }
-  },
-  "packageRules": [
-    {
-      "matchDatasources": ["custom.xlsx"],
-      "extractVersion": "^xlsx-(?<version>.+)/xlsx-(?<version>.+).tgz$"
-    }
-  ]
+  "dependencyDashboard": true
 }
