@@ -11,25 +11,6 @@
     "fileMatch": ["package.json"],
     "enabled": true
   },
-  "packageRules": [
-   {
-      "matchDatasources": ["npm"],
-      "minimumReleaseAge": "2 days"
-   }
-  ],
-  "regexManagers": [
-    {
-      "customType": "regex",
-      "fileMatch": ["^package.json$"],
-      "matchStringsStrategy": "combination",
-      "matchStrings": [
-        "\"xlsx\": 0.18.5"
-      ],
-      "datasourceTemplate": "custom.xlsx",
-      "depNameTemplate": "https://cdn.sheetjs.com/",
-      "currentValueTemplate": "0.20.0"
-    }
-  ],
   "customDatasources": {
     "xlsx": {
       "defaultRegistryUrlTemplate": "https://cdn.sheetjs.com/",
@@ -39,8 +20,7 @@
   "packageRules": [
     {
       "matchDatasources": ["custom.xlsx"],
-      "extractVersion": "xlsx-0.20.1/xlsx-0.20.1.tgz",
-      "matchCurrentValue": "!/^0\\./"
+     "extractVersion": "xlsx-0.20.1/xlsx-0.20.1.tgz"
     }
   ]
 }
