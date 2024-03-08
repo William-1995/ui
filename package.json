@@ -14,7 +14,7 @@
         "build": "ng build --configuration=$npm_package_config_config_environment $npm_package_config_params"
     },
     "dependencies": {
-        "xlsx": "0.17.4",
+        "xlsx": "0.18.5",
         "@angular-architects/module-federation": "17.0.8",
         "@angular-architects/module-federation-tools": "17.0.8",
         "@angular/animations": "^17.0.0",
