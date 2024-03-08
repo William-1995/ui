@@ -9,7 +9,7 @@
   ],
   "packageRules": [
      {
-        "matchDatasources": ["npm", "custom.xlsx"],
+        "matchDatasources": ["npm", "custom.nginx"],
         "minimumReleaseAge": "2 days"
      }
   ],
