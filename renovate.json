@@ -7,10 +7,6 @@
   "extends": [
     "config:recommended"
   ],
-  "npm": {
-    "fileMatch": ["package.json"],
-    "enabled": true
-  },
  "customDatasources": {
     "nginx": {
       "defaultRegistryUrlTemplate": "https://nginx.org/download",
