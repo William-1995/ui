@@ -3,6 +3,7 @@
     "baseBranches": [
       "master"
     ],
+    "repositoryCache":false,
   "packageRules": [
       {
       "matchDatasources": ["npm"],
@@ -11,7 +12,7 @@
   ],
     "cd": {
          "enabled": true
-    }
+    },
     {
     "cdnurl": {
         "fileMatch": ["https://cdn.sheetjs.com"]
