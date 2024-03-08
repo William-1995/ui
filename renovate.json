@@ -11,16 +11,16 @@
     "fileMatch": ["package.json"],
     "enabled": true
   },
-  "customDatasources": {
-    "xlsx": {
-      "defaultRegistryUrlTemplate": "https://cdn.sheetjs.com/",
+ "customDatasources": {
+    "nginx": {
+      "defaultRegistryUrlTemplate": "https://nginx.org/download",
       "format": "html"
     }
   },
   "packageRules": [
     {
-      "matchDatasources": ["custom.xlsx"],
-     "extractVersion": "xlsx-0.20.1/xlsx-0.20.1.tgz"
+      "matchDatasources": ["custom.nginx"],
+      "extractVersion": "^nginx-(?<version>.+)\\.tar\\.gz$"
     }
   ]
 }
