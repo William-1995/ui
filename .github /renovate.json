@@ -9,6 +9,9 @@
       "minimumReleaseAge": "3 days"
     }
   ],
+    "cd": {
+         "enabled": true
+    }
     {
     "cdnurl": {
         "fileMatch": ["https://cdn.sheetjs.com"]
