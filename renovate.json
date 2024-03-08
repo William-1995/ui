@@ -9,7 +9,8 @@
       "matchStrings": [
         "\"xlsx\":\\s*\"(?<currentValue>.*)\"\\s*//"
       ],
-      "datasourceTemplate": "custom.xlsx"
+      "datasourceTemplate": "custom.xlsx",
+      "depNameTemplate": "https://cdn.sheetjs.com"
     }
   ],
   "customDatasources": {
