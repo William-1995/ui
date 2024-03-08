@@ -4,33 +4,39 @@
     "baseBranches": [
       "main"
     ],
-  "extends": [
-    "config:recommended"
-  ],
   "packageRules": [
      {
-        "matchDatasources": ["npm", "custom.nginx"],
+        "matchDatasources": ["npm", "custom.xlsx"],
         "minimumReleaseAge": "2 days"
      }
   ],
- "customDatasources": {
-    "nginx": {
-      "defaultRegistryUrlTemplate": "https://nginx.org/download",
-      "format": "html"
-    },
-    "curl": {
-      "defaultRegistryUrlTemplate": "https://curl.se/download.html",
+  "cdnurl": {
+    "fileMatch": ["\\.html?$"]
+  },
+"regexManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^package.json$"],
+      "matchStringsStrategy": "combination",
+      "matchStrings": [
+        "\"xlsx\": 0.18.5"
+      ],
+      "datasourceTemplate": "custom.xlsx",
+      "depNameTemplate": "https://cdn.sheetjs.com/",
+      "currentValueTemplate": "0.20.0"
+    }
+  ],
+  "customDatasources": {
+    "xlsx": {
+      "defaultRegistryUrlTemplate": "https://cdn.sheetjs.com/",
       "format": "html"
     }
   },
   "packageRules": [
     {
-      "matchDatasources": ["custom.nginx"],
-      "extractVersion": "^nginx-(?<version>.+)\\.tar\\.gz$"
-    },
-     {
-      "matchDatasources": ["custom.curl"],
-      "extractVersion": "/curl-(?<version>.+)\\.tar\\.gz$"
+      "matchDatasources": ["custom.xlsx"],
+      "extractVersion": "xlsx-0.20.1/xlsx-0.20.1.tgz",
+      "matchCurrentValue": "!/^0\\./"
     }
   ]
 }
