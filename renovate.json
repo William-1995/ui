@@ -20,16 +20,5 @@
   "matchSourceUrlPrefixes": [
     "https://git.sheetjs.com/SheetJS/sheetjs/"
   ]
-},
-  "customManagers": [
-    {
-      "customType": "regex",
-      "fileMatch": [
-        "a.txt"
-      ],
-      "matchStrings": [
-       "renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?( packageName=(?<packageName>.*?))?( registryUrl=(?<registryUrl>.*?))?( extractVersion=(?<extractVersion>.*?))?\s(ENV .*?_VERSION=|\s*?default\s*?=\s*?")(?<currentValue>.*?)"?\s"
-      ]
-    }
-  ]
 }
+
