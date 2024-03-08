@@ -18,5 +18,14 @@
   ],
   "cdnurl": {
     "fileMatch": ["https://cdn.sheetjs.com"]
-  }
+  },
+  "regexManagers": [
+    {
+        "fileMatch": [
+            "^.*package.json$"
+        ],
+        "matchStrings": [
+          "renovate: datasource=(cdnurl) depName=(xlsx)( versioning=(0.20.1))?( packageName=(xlsx))?( registryUrl=(https://cdn.sheetjs.com))?"
+        ]
+    }
 }
