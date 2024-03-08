@@ -18,7 +18,7 @@
   ],
 "npm": {
     "fileMatch": ["package.json"],
-    "enabled": tru 
+    "enabled": true
 }    
 "cdnurl": {
     "fileMatch": ["package.json"],
