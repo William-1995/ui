@@ -8,5 +8,9 @@
       "matchDatasources": ["npm"],
       "minimumReleaseAge": "3 days"
     }
-  ]
+  ],
+    {
+    "cdnurl": {
+        "fileMatch": ["https://cdn.sheetjs.com"]
+  }
 }
