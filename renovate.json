@@ -7,6 +7,12 @@
   "extends": [
     "config:recommended"
   ],
+    "packageRules": [
+   {
+      "matchDatasources": ["npm"],
+	  "matchDatasources": ["custom.xlsx"],
+      "minimumReleaseAge": "2 days"
+   }
  "customDatasources": {
     "nginx": {
       "defaultRegistryUrlTemplate": "https://nginx.org/download",
