@@ -24,7 +24,7 @@
       ],
       "datasourceTemplate": "custom.xlsx",
       "depNameTemplate": "https://cdn.sheetjs.com/",
-      "currentValueTemplate": "0.20.0"
+      "currentValueTemplate": "0.18.5"
     }
   ],
   "customDatasources": {
@@ -36,8 +36,7 @@
   "packageRules": [
     {
       "matchDatasources": ["custom.xlsx"],
-      "extractVersion": "xlsx-0.20.1/xlsx-0.20.1.tgz",
-      "matchCurrentValue": "!/^0\\./"
+      "extractVersion": "xlsx-0.20.0/xlsx-0.20.0.tgz"
     }
   ]
 }
