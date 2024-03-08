@@ -15,7 +15,7 @@
     },
     "dependencies": {
         "xlsx": "0.17.4",
-        "@angular-architects/module-federation": "14.0.0",
+        "@angular-architects/module-federation": "14.3.14",
         "@angular-architects/module-federation-tools": "14.3.14",
         "@angular/animations": "^13.3.11",
         "@angular/cdk": "13.3.9",
