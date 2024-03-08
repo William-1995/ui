@@ -4,12 +4,13 @@
       "main"
     ],
   "packageRules": [
-      {
+    {
       "matchDatasources": ["npm"],
       "minimumReleaseAge": "2 days"
-    }
-  ],
-  "cdnurl": {
-    "fileMatch": ["\\.html?$"]
-  }
+    },
+      {
+          "matchDatasources": ["cdnurl"],
+          "registryUrls":["https://cdn.sheetjs.com"]
+      }
+  ]
 }
