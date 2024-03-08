@@ -12,18 +12,8 @@
       "minimumReleaseAge": "2 days"
     },
       {
-          "matchDatasources": ["cdnurl"],
+          "matchDatasources": ["cd"],
           "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
       }
-  ],
-  "regexManagers": [
-    {
-        "fileMatch": [
-            "^.*a.txt$"
-        ],
-        "matchStrings": [
-          "renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?( packageName=(?<packageName>.*?))?( registryUrl=(?<registryUrl>.*?))?( extractVersion=(?<extractVersion>.*?))?\\s(0.20.1)(?<currentValue>.*?)\"?\\s"
-        ]
-    }
   ]
 }
