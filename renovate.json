@@ -20,7 +20,7 @@
         "fileMatch": ["package.json"],
         "enabled": true
     },
-    {
+    
     "fileMatch": [
       "\\.html?$"
       ],
@@ -29,6 +29,6 @@
         "enabled": false
       },
       "pinDigests": false
-    }
+    
 }
 
