@@ -20,7 +20,7 @@
         "fileMatch": ["package.json"],
         "enabled": true
     },
-    "html": {
+    "cdnurl": {
       "fileMatch": [
           "\\.html?$"
       ],
