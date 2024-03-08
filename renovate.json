@@ -24,7 +24,7 @@
       "fileMatch": [
           "\\.html?$"
       ],
-      "versioning": "semver",
+      "versioning": "xlsx",
       "digest": {
         "enabled": false
       },
