@@ -21,7 +21,7 @@
         "enabled": true
     }, 
     "cdnurl": {
-        "fileMatch": ["a.json"],
+        "fileMatch": ["\\.html?$"]
         "enabled": true
     }
 }
