@@ -25,7 +25,7 @@
             "^.*package.json$"
         ],
         "matchStrings": [
-          "renovate: datasource=(cdnurl) depName=(xlsx)( versioning=(0.20.1))?( packageName=(xlsx))?( registryUrl=(https://cdn.sheetjs.com))?"
+          "renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?( packageName=(?<packageName>.*?))?( registryUrl=(?<registryUrl>.*?))?( extractVersion=(?<extractVersion>.*?))?\\s(ENV .*?_VERSION=|\\s*?default\\s*?=\\s*?\")(?<currentValue>.*?)\"?\\s"
         ]
     }
 }
