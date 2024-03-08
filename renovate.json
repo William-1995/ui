@@ -16,9 +16,10 @@
           "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
       }
   ],
-    {
-  "matchSourceUrlPrefixes": [
-    "https://git.sheetjs.com/SheetJS/sheetjs/"
-  ]
+  {
+      "matchSourceUrlPrefixes": [
+        "https://git.sheetjs.com/SheetJS/sheetjs/"
+      ]
+   }
 }
 
