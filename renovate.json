@@ -10,12 +10,12 @@
         "\"xlsx\":\\s*\"(?<currentValue>.*)\"\\s*//"
       ],
       "datasourceTemplate": "custom.xlsx",
-      "depNameTemplate": "https://cdn.sheetjs.com"
+      "depNameTemplate": "https://cdn.sheetjs.com/"
     }
   ],
   "customDatasources": {
     "xlsx": {
-      "defaultRegistryUrlTemplate": "https://cdn.sheetjs.com",
+      "defaultRegistryUrlTemplate": "https://cdn.sheetjs.com/",
       "format": "html"
     }
   },
