@@ -21,7 +21,7 @@
         "enabled": true
     },
     "html": {
-    "fileMatch": ["\\.html?$"],
+    "fileMatch": ["a.html"],
     "enabled": true
   }
 }
