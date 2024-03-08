@@ -6,6 +6,9 @@
     "extends": [
     "config:recommended"
   ],
+  "matchSourceUrlPrefixes": [
+      "https://git.sheetjs.com/SheetJS/sheetjs/"
+  ]，
   "packageRules": [
     {
       "matchDatasources": ["npm"],
@@ -15,11 +18,6 @@
           "matchDatasources": ["cdnurl"],
           "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
       }
-  ],
-  {
-      "matchSourceUrlPrefixes": [
-        "https://git.sheetjs.com/SheetJS/sheetjs/"
-      ]
-   }
+  ]
 }
 
