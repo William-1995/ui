@@ -1,37 +1,28 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "baseBranches": [
-      "main"
-    ],
-  "extends": [
-    "config:recommended"
-  ],
-  "packageRules": [
-   {
-      "matchDatasources": ["npm"],
-      "minimumReleaseAge": "2 days"
-   },
-   {
-          "matchDatasources": ["cdnurl"],
-          "registryUrls":["https://git.sheetjs.com/SheetJS/sheetjs"]
-    }
-   ],
-    "npm": {
-        "fileMatch": ["package.json"],
-        "enabled": true
-    },
-  "customManagers": [
+  "dependencyDashboard": true,
+  "regexManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["package.json$"],
+      "fileMatch": ["^package.json$"],
+      "matchStringsStrategy": "combination",
       "matchStrings": [
-        "\"xlsx\":\\s*\"(?<currentValue>.*)\"\\s*//"
+        "\"extension\":\"(?<depName>.*)\"",
+        "\"version\":\"(?<currentValue>.*)\""
       ],
-      "depNameTemplate": "https://cdn.sheetjs.com/xlsx-0.20.1/xlsx-0.20.1.tgz",
-      "autoReplaceStringTemplate": " \"xlsx\" : \"https://cdn.sheetjs.com/xlsx-0.20.1/xlsx-0.20.1.tgz\"",
-      "datasourceTemplate": "npm"
+      "datasourceTemplate": "custom.xlsx"
+    }
+  ],
+  "customDatasources": {
+    "xlsx": {
+      "defaultRegistryUrlTemplate": "https://cdn.sheetjs.com",
+      "format": "html"
+    }
+  },
+  "packageRules": [
+    {
+      "matchDatasources": ["custom.xlsx"],
+      "extractVersion": "(?<depName>.*)-(?<currentValue>.+).tgz"
     }
   ]
 }
-
-
